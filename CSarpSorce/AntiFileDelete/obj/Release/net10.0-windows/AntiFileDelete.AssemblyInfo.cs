@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AntiFileDelete")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6030edc98bceaec025adc9530d3c1cc14b1785e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19ed44947e02efed8607ed6ed678bcf895dde08c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AntiFileDelete")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AntiFileDelete")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

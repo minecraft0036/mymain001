@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "njp6lr20SIo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\rasomware001\\rasomware001.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.3\\microsoft.net.illink.tasks.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\10.0.3\\microsoft.netcore.app.runtime.win-x86.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\10.0.3\\microsoft.windowsdesktop.app.runtime.win-x86.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\10.0.3\\microsoft.aspnetcore.app.runtime.win-x86.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\10.0.3\\microsoft.netcore.app.crossgen2.win-x64.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
