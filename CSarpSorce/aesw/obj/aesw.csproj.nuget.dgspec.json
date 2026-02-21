@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\File String Encrypt.csproj": {}
+    "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\aesw\\aesw.csproj": {}
   },
   "projects": {
-    "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\File String Encrypt.csproj": {
+    "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\aesw\\aesw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\File String Encrypt.csproj",
-        "projectName": "File String Encrypt",
-        "projectPath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\File String Encrypt.csproj",
+        "projectUniqueName": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\aesw\\aesw.csproj",
+        "projectName": "aesw",
+        "projectPath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\aesw\\aesw.csproj",
         "packagesPath": "C:\\Users\\myuser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\obj\\",
+        "outputPath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\aesw\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
