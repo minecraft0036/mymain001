@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
 namespace File_String_Encrypt
@@ -9,24 +8,52 @@ namespace File_String_Encrypt
 
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            try
+            {
+                if (args.Length==2)
+                {
 
-            EncryptFileRecurse(Environment.CurrentDirectory);
-            Console.WriteLine();
+                    void Recurse(string Path)
+                    {
+                      foreach(var item in  Directory.EnumerateDirectories(Path)) { 
+                        Recurse(item);
+                        }
+                      foreach (var item in Directory.EnumerateFiles(Path)) {
+                            Ex.decryptFiles(item, args[0], args[1]);
+                        }
+                    }
+                    Recurse(Environment.CurrentDirectory);
+                }
+                else
+                {
+                    var df = AesCng.Create(); df.GenerateIV(); df.GenerateKey();
+                    Console.WriteLine("Key {0}\n IV: {1}", Convert.ToBase64String(df.Key), Convert.ToBase64String(df.IV));
+                    EncryptFileRecurse(Environment.CurrentDirectory,df.Key,df.IV);
+                }
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Ex.WriteLineAsColor(ConsoleColor.Red, "Useage:,<IV>,<Key>");
+
+            }
+
+
+
         }
-        static void EncryptFileRecurse(string FilePath)
+        static void EncryptFileRecurse(string FilePath, byte[] key, byte[] iv)
         {
+
             string[] strings = System.IO.Directory.GetFiles(FilePath);
             foreach (string s in strings)
             {
-                Ex.encryptFile(s)
+                Ex.encryptFile(s,key,iv)
                     ; Console.WriteLine(s);
             }
             foreach (string yu in System.IO.Directory.EnumerateDirectories(FilePath))
             {
                 try
                 {
-                    EncryptFileRecurse(yu);
+                    EncryptFileRecurse(yu,key,iv);
                     Console.WriteLine(yu);
                 }
                 catch (Exception ex)
@@ -36,6 +63,9 @@ namespace File_String_Encrypt
                 }
 
             }
+
+
+
         }
         static dynamic AesString(string s)
         {
@@ -54,50 +84,46 @@ namespace File_String_Encrypt
         {
             return Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(Encoding.UTF8.GetBytes(s)));
         }
-        public static void encryptFile(string FilePath)//方法が難しいので自己流
+        public static void encryptFile(string FilePath, byte[] key, byte[] iv)//方法が難しいので自己流
         {
             try
             {
                 byte[] d = File.ReadAllBytes(FilePath);
-                var df = AesCng.Create(); df.GenerateIV(); df.GenerateKey();
-
-                // 先に暗号化してから書き込む（FileMode.Createの前に処理を完結させる）
+                var df = AesCng.Create(); df.Key=key; df.IV = iv;
                 byte[] bytes = df.EncryptCbc(d, df.IV);
-               using var g = new FileStream(FilePath, FileMode.Create, FileAccess.Write);
-
-                g.Write(bytes, 0, bytes.Length);g.Close();
+                using var g = new FileStream(FilePath, FileMode.Create, FileAccess.Write);
+                g.Write(bytes, 0, bytes.Length); g.Close();
                
+
             }
             catch (Exception excp) { Console.WriteLine(excp.Message); }
-            
-           
         }
-        static void decryptFiles(string FilePath, byte[] iv)
+        public static void decryptFiles(string FilePath, string IV, string Key)
         {
-            
             try
             {
-                byte[] bytes = File.ReadAllBytes(FilePath);
-                var df = AesCng.Create();
-                byte[] dec = df.DecryptCbc(bytes, iv);
-               using var g = new FileStream(FilePath, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);
-                g.Write(dec, 0, dec.Length);
-            }
-            catch (FileNotFoundException ex)
-            {
+                byte[] ivBytes = Convert.FromBase64String(IV);
+                byte[] keyBytes = Convert.FromBase64String(Key);
+                var df = AesCng.Create(); df.IV = ivBytes; df.Key = keyBytes;
+                byte[] dec = df.DecryptCbc(File.ReadAllBytes(FilePath), ivBytes);
 
-                WriteLineAsColor(ConsoleColor.Red, "File Not Found. Error ex.Message");
+                // 一時ファイル経由で安全に書き込む
+                File.WriteAllBytes(FilePath+".tmp", dec);
+                File.Replace(FilePath+".tmp", FilePath, null);
+                File.Delete(FilePath + ".tmp");
+                Ex.WriteLineAsColor(ConsoleColor.Blue, "Decrypted:" + FilePath);
             }
-            catch  (IOException ex)
+            catch (Exception ex)
             {
-                WriteLineAsColor(ConsoleColor.DarkRed, "others error Show details:" + ex.Message);
+                WriteLineAsColor(ConsoleColor.Red, $"復号失敗: {FilePath} - {ex.Message}");
             }
-            
+
+
         }
-        static void WriteLineAsColor(ConsoleColor Color,string Line)
+        public static void WriteLineAsColor(ConsoleColor Color, string Line)
         {
             var d = Console.ForegroundColor;
-            Console.ForegroundColor = Color;Console.WriteLine(Line);
+            Console.ForegroundColor = Color; Console.WriteLine(Line);
             Console.ForegroundColor = d;
         }
     }

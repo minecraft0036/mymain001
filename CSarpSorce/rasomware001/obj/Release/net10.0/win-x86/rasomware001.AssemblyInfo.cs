@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rasomware001")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19ed44947e02efed8607ed6ed678bcf895dde08c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0cbc3552ec7684e82508c3bc640316d07af68e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("rasomware001")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rasomware001")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
