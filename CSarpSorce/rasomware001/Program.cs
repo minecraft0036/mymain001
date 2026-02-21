@@ -60,16 +60,17 @@ namespace File_String_Encrypt
             {
                 byte[] d = File.ReadAllBytes(FilePath);
                 var df = AesCng.Create(); df.GenerateIV(); df.GenerateKey();
-                var g = new FileStream(FilePath, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);
 
+                // 先に暗号化してから書き込む（FileMode.Createの前に処理を完結させる）
+                byte[] bytes = df.EncryptCbc(d, df.IV);
+               using var g = new FileStream(FilePath, FileMode.Create, FileAccess.Write);
 
-                byte[] en = df.EncryptCbc(d, df.IV);
-
-                g.Write(en, 0, en.Length);
-                g.Close();
-                g.Dispose();
+                g.Write(bytes, 0, bytes.Length);g.Close();
+               
             }
             catch (Exception excp) { Console.WriteLine(excp.Message); }
+            
+           
         }
         static void decryptFiles(string FilePath, byte[] iv)
         {
@@ -79,7 +80,7 @@ namespace File_String_Encrypt
                 byte[] bytes = File.ReadAllBytes(FilePath);
                 var df = AesCng.Create();
                 byte[] dec = df.DecryptCbc(bytes, iv);
-                var g = new FileStream(FilePath, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);
+               using var g = new FileStream(FilePath, FileMode.Create, FileAccess.ReadWrite, FileShare.ReadWrite);
                 g.Write(dec, 0, dec.Length);
             }
             catch (FileNotFoundException ex)
@@ -91,6 +92,7 @@ namespace File_String_Encrypt
             {
                 WriteLineAsColor(ConsoleColor.DarkRed, "others error Show details:" + ex.Message);
             }
+            
         }
         static void WriteLineAsColor(ConsoleColor Color,string Line)
         {
