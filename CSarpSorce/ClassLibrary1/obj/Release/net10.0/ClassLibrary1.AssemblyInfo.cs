@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("csh")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ClassLibrary1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+770c0ded2c8ff7c39bdbb97ea91980bfbf6a9653")]
-[assembly: System.Reflection.AssemblyProductAttribute("csh")]
-[assembly: System.Reflection.AssemblyTitleAttribute("csh")]
+[assembly: System.Reflection.AssemblyProductAttribute("ClassLibrary1")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ClassLibrary1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment クラスによって生成されました。
