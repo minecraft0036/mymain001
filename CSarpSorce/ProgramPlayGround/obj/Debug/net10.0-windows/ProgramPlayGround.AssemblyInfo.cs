@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgramPlayGround")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1d9c357f91a8594a93ee73e96bef5d4a4e9f467")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f44a90aaf0aba032cbc152f7afc1da200298014")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgramPlayGround")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgramPlayGround")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
