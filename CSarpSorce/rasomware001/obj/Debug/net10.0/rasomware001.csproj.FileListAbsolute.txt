@@ -1,0 +1,15 @@
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\bin\Debug\net10.0\rasomware001.exe
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\bin\Debug\net10.0\rasomware001.deps.json
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\bin\Debug\net10.0\rasomware001.runtimeconfig.json
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\bin\Debug\net10.0\rasomware001.dll
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\bin\Debug\net10.0\rasomware001.pdb
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.AssemblyInfoInputs.cache
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.AssemblyInfo.cs
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.csproj.CoreCompileInputs.cache
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.sourcelink.json
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.dll
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\refint\rasomware001.dll
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.pdb
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\rasomware001.genruntimeconfig.cache
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\rasomware001\obj\Debug\net10.0\ref\rasomware001.dll

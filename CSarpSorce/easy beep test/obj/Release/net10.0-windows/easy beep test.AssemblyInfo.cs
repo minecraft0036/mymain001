@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("easy beep test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6030edc98bceaec025adc9530d3c1cc14b1785e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f44a90aaf0aba032cbc152f7afc1da200298014")]
 [assembly: System.Reflection.AssemblyProductAttribute("easy beep test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("easy beep test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

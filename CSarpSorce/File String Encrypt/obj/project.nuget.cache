@@ -8,5 +8,15 @@
     "C:\\Users\\myuser\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.3\\microsoft.net.illink.tasks.10.0.3.nupkg.sha512",
     "C:\\Users\\myuser\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.2\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "message": "キャッシュ ファイルの読み取りの問題 C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\obj\\project.nuget.cache : '<' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.",
+      "projectPath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\File String Encrypt.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\File String Encrypt\\File String Encrypt.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

@@ -1,0 +1,15 @@
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\bin\Debug\net10.0-windows\ProgramPlayGround.exe
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\bin\Debug\net10.0-windows\ProgramPlayGround.deps.json
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\bin\Debug\net10.0-windows\ProgramPlayGround.runtimeconfig.json
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\bin\Debug\net10.0-windows\ProgramPlayGround.dll
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\bin\Debug\net10.0-windows\ProgramPlayGround.pdb
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.AssemblyInfoInputs.cache
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.AssemblyInfo.cs
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.csproj.CoreCompileInputs.cache
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.sourcelink.json
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.dll
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\refint\ProgramPlayGround.dll
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.pdb
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ProgramPlayGround.genruntimeconfig.cache
+C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\ProgramPlayGround\obj\Debug\net10.0-windows\ref\ProgramPlayGround.dll

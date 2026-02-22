@@ -3,5 +3,7 @@
   <Project Path="../AntiFileDelete/AntiFileDelete.csproj" />
   <Project Path="../easy beep test/easy beep test.csproj" Id="0e479c84-92d3-45dd-bedc-7ea638da66e0" />
   <Project Path="../File String Encrypt/File String Encrypt.csproj" />
+  <Project Path="../ProgramPlayGround/ProgramPlayGround.csproj" Id="6db25d99-1087-4d3f-80d2-322e503cfce1" />
+  <Project Path="../rasomware001/rasomware001.csproj" Id="c9d39db6-3616-44a4-9b70-cbba53ae3a74" />
   <Project Path="csh.csproj" />
 </Solution>
