@@ -1,1 +1,0 @@
-C:\Users\myuser\Documents\GitHub\igaku\CSarpSorce\AntiFileDelete\bin\Release\net10.0-windows\AntiFileDelete.exe
