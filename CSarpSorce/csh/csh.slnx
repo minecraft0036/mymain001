@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="../aesw/aesw.csproj" />
   <Project Path="../AntiFileDelete/AntiFileDelete.csproj" />
+  <Project Path="../ConsoleApp1/ConsoleApp1.csproj" Id="0efc0f07-419c-4e7a-b784-a7c08859f2e9" />
   <Project Path="../easy beep test/easy beep test.csproj" Id="0e479c84-92d3-45dd-bedc-7ea638da66e0" />
   <Project Path="../File String Encrypt/File String Encrypt.csproj" />
   <Project Path="csh.csproj" />
