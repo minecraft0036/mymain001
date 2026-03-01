@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8"/>
+    <title>Page1</title>
+    <link href="Style.css" rel="stylesheet" />
+    <script src="file1.js"></script>
+</head>
+<body style="user-select:none"><div id="card">
+    <nav>
+        <style>
+            nav {background-color:forestgreen;text-align:center;position:fixed;top:0px; z-index:1200;width:100%;}
+            nav a {text-decoration:none;}
+            nav li {
+                list-style:none;
+               display:inline-block;
+               font:menu;font-size:20px;
+               padding-right:20px;border-left:5px solid white;text-align:center;user-select:none;
+            }
+            nav a{cursor:default}
+        </style>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a href="d">link</a></li>
+            <li><a href="h" id="hide">content</a><span style="border-right:5px solid white"></span></li>
+        </ul>
+    </nav>
+    </div>
+      <div id="main">
+          <style>
+              #main {
+                  position:absolute;
+                  background-color: aqua;
+                  position: relative;
+                  top: 300px;width:70%
+              }
+          </style>
+          <h4 id="sd">Webページの基本構造を理解しよう</h4>
+
+          <h3>HTMLとは</h3>
+          <p>HTMLは「HyperText Markup Language」の略で、Webページの骨組みを作成するための言語です。タグと呼ばれる記号を使って、テキスト、画像、リンクなどの要素を定義します。</p>
+
+          <h3>基本的なタグ</h3>
+          <p>HTMLには多くのタグがありますが、最も基本的なものは以下の通りです：</p>
+          <ul style="margin-left: 20px;">
+              <li><strong>&lt;html&gt;</strong> - ページ全体を囲む最外部のタグ</li>
+              <li><strong>&lt;head&gt;</strong> - ページの設定情報を記述する部分</li>
+              <li><strong>&lt;body&gt;</strong> - 実際に表示される内容を記述する部分</li>
+              <li><strong>&lt;div&gt;</strong> - コンテンツをグループ分けする要素</li>
+              <li><strong>&lt;nav&gt;</strong> - ナビゲーションメニューを定義する</li>
+          </ul>
+
+          <h3>スタイルの適用</h3>
+          <p>HTMLで構造を作成した後、CSSを使ってデザインを調整します。背景色、フォントサイズ、レイアウトなど、様々なスタイルを指定できます。このページでは、&lt;style&gt;タグ内にCSSを直接記述しています。</p>
+
+          <h3>インタラクティブな機能</h3>
+          <p>JavaScriptを使うことで、ユーザーの操作に応じた動的な処理が可能になります。例えば、ボタンをクリックしたときに何かを実行したり、データを送信したりできます。</p>
+
+          <h3>レスポンシブデザイン</h3>
+          <p>現代のWebページは、パソコン、タブレット、スマートフォンなど、様々なデバイスで表示されます。異なる画面サイズに対応させることを「レスポンシブデザイン」と呼びます。</p>
+          <h4 id="sd">ddddd</h4>
+         
+      </div>
+    <div id="Prof">
+        <img src="d.png" width="100" height="100"/>
+        <div id="con"style="border-top:dotted black 5px">
+            <p>minecraft</p>
+
+        </div>
+        <style>
+            #Prof {
+                display:inline-block;
+                background-color:burlywood;
+                position:absolute; top:100px; right:0;height:auto;width:200px;position:fixed;
+            }
+            body {position:relative;background-color:papayawhip}
+            #Prof img {
+                padding-left:25px;
+            }
+        </style>
+    </div>
+</body>
+</html>

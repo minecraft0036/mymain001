@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8bBQz6yicBk=",
+  "dgSpecHash": "2PutCOpT89I=",
   "success": true,
   "projectFilePath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.11.0\\microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.codeanalysis.common\\5.0.0\\microsoft.codeanalysis.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.codeanalysis.csharp\\5.0.0\\microsoft.codeanalysis.csharp.5.0.0.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\5.0.0\\microsoft.codeanalysis.csharp.scripting.5.0.0.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\5.0.0\\microsoft.codeanalysis.scripting.common.5.0.0.nupkg.sha512",
     "C:\\Users\\myuser\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\10.0.3\\microsoft.dotnet.ilcompiler.10.0.3.nupkg.sha512",
     "C:\\Users\\myuser\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.3\\microsoft.net.illink.tasks.10.0.3.nupkg.sha512",
     "C:\\Users\\myuser\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.3\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.3.nupkg.sha512"
