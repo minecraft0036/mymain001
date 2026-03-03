@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "swkLTseTtaQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\myuser\\Documents\\GitHub\\igaku\\CSarpSorce\\OhMyPC\\OhMyPC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\10.0.3\\microsoft.dotnet.ilcompiler.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.3\\microsoft.net.illink.tasks.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.3\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.3\\microsoft.netcore.app.runtime.win-x64.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.3\\microsoft.aspnetcore.app.runtime.win-x64.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\10.0.3\\microsoft.netcore.app.crossgen2.win-x64.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\microsoft.netcore.app.runtime.nativeaot.win-x64\\10.0.3\\microsoft.netcore.app.runtime.nativeaot.win-x64.10.0.3.nupkg.sha512",
+    "C:\\Users\\myuser\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.3\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
