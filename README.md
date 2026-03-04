@@ -1,15 +1,15 @@
 # mymain001
 
 ## 概要
-`mymain001` は主に C#（約 59.7%）と HTML（約 39.4%）で構成されたリポジトリです。ASP.NET ベースのウェブアプリケーションや静的ページを含む構成を想定しています（実際のプロジェクト構造に合わせて調整してください）。この README はリポジトリ全体の目的、現在の進捗、構成、ビルド／実行方法、貢献手順などをまとめたものです。
+`mymain001` は主に C#（約 59.7%）と HTML（約 39.4%）で構成されたリポジトリです。リポジトリ内には C# ソースをまとめた `CSarpSorce/` ディレクトリと、静的 HTML ページを含む `MyHTML/` ディレクトリ、ルートの `index.html` などのファイルがあります。この README はリポジトリ全体の目的、現在の進捗、実際のディレクトリ構成に合わせたビルド／実行方法、貢献手順などをまとめたものです。
 
 ## 目次
 - 概要
 - 現在の進捗
 - 主要機能
-- リポジトリ構成（例）
+- リポジトリ構成（実際）
 - 必要環境
-- ビルドと実行
+- ビルドと実行（実ファイルパス）
 - テスト
 - デプロイ（簡易）
 - 貢献方法
@@ -18,70 +18,64 @@
 
 ## 現在の進捗
 - 言語構成：C#（約 59.7%）、HTML（約 39.4%）、その他 0.9%。
-- 基本的なアプリケーション骨組み（バックエンド：C#、フロントエンド：HTML/CSS）が存在します。
-- 主要な機能実装の進捗や未実装タスクは ISSUE や Project ボードで管理してください（追加情報があればここにタスク一覧を追記します）。
+- C# のサンプル/プロジェクトが `CSarpSorce/` 配下に存在します（例: `CSarpSorce/csh/`, `CSarpSorce/OhMyPC/`, `CSarpSorce/ClassLibrary1/`）。
+- HTML ページは `MyHTML/` とルートの `index.html` にあります。
 
-## 主要機能（想定・テンプレ）
-- ユーザー認証（サンプル/実装）
-- データの CRUD 機能（C# バックエンド）
-- フロントエンドの静的／動的ページ（HTML + 必要に応じて JS）
-- API エンドポイント（JSON レスポンス）
+## 主要機能（想定）
+- C# サンプルアプリ（コンソール / ライブラリ）
+- 静的 HTML ページの提供
+- 将来的に ASP.NET ベースの Web アプリ化を想定可能
 
-※ 実際の機能はソースコードに合わせてこのセクションを具体化してください。
+## リポジトリ構成（実際）
+- /CSarpSorce/
+  - /csh/ — コンソールアプリのソース（Program.cs など）
+  - /ConsoleApp1/ — 追加のサンプルアプリ（Resources 配下に HTML 等あり）
+  - /OhMyPC/ — 別プロジェクト（ビルド成果物や obj/ bin/ が含まれることがあります）
+  - /ClassLibrary1/ — ライブラリソース
+- /MyHTML/ — 静的 HTML ページ（Index.html, HTMLPage1.html など）
+- /index.html — ルートの HTML
+- その他: googled*.html などの検証ファイル
 
-## リポジトリ構成（例）
-- /src/ — C# プロジェクト（アプリ本体）
-- /src/ProjectName/ — ASP.NET アプリケーション（Controllers, Models, Views/Pages 等）
-- /wwwroot/ または /public/ — 静的ファイル���HTML/CSS/JS）
-- /tests/ — 単体テストプロジェクト
-- /docs/ — ドキュメント
-- README.md — このファイル
-
-（実際のディレクトリ構成に合わせて修正してください）
+（注意: 一部のファイルにビルド生成ファイル（obj/、bin/）や個人環��に依存するパスが含まれている可能性があります。必要なら .gitignore を整備してください。）
 
 ## 必要環境
-- .NET SDK 6.0 以上（推奨: .NET 7 / .NET 8）  
-  ダウンロード: https://dotnet.microsoft.com/
-- （必要に応じて）Node.js / npm（フロントエンドビルドがある場合）
+- .NET SDK（プロジェクトに合わせて .NET 6/7/10 などが使われている可能性があります。例: net10.0 の出力があるため .NET 10 が参照されている箇所があります）
+  - ダウンロード: https://dotnet.microsoft.com/
 - Git
 
-## ビルドと実行（一般的な手順）
+## ビルドと実行（実ファイルパスの例）
 1. リポジトリをクローン:
    - git clone https://github.com/minecraft0036/mymain001.git
-2. 依存関係を復元:
+2. 依存関係を復元とビルド（例）:
    - cd mymain001
-   - dotnet restore
-3. ビルド:
-   - dotnet build
-4. 実行:
-   - dotnet run --project ./src/ProjectName   （実際のプロジェクトファイルパスに置き換えてください）
-5. ブラウザでアクセス（ASP.NET の既定の URL が表示されます。例: http://localhost:5000）
+   - dotnet restore CSarpSorce/csh/csh.csproj
+   - dotnet build CSarpSorce/csh/csh.csproj
+3. 実行（コンソールアプリの例）:
+   - dotnet run --project ./CSarpSorce/csh/csh.csproj
+   - あるいは他プロジェクトを実行: dotnet run --project ./CSarpSorce/OhMyPC/OhMyPC.csproj
+4. 静的ページの確認:
+   - ブラウザで `index.html` または `MyHTML/Index.html` を開く
 
-Visual Studio / Visual Studio Code を使う場合は、それぞれの IDE からプロジェクトを開いてデバッグ／実行できます。
+※ 実際にどのターゲットフレームワークを使うかは各 .csproj を確認してください。
 
 ## テスト
-- テストがある場合:
-  - dotnet test ./tests/ProjectName.Tests
-
-テストプロジェクトが無い場合は、このセクションを削除または「未実装」としてください。
+- リポジトリ内に tests フォルダが見つからない場合は未設定です。テストプロジェクトがある場合は `dotnet test <path-to-test-csproj>` を実行してください。
 
 ## デプロイ（簡易）
-- コンテナ化が必要な場合は Dockerfile を用意してビルド／プッシュします。
-- Azure / AWS / GCP などの PaaS にデプロイする場合は各プラットフォームの手順に従ってください。
-- CI/CD を構築する場合は GitHub Actions 等でビルド→テスト→デプロイのワークフローを作成してください。
+- 必要に応じて Dockerfile を作成し、個別プロジェクトをコンテナ化してください。
+- 静的ページは GitHub Pages で公開できます（`index.html` をルートに置いて repo の Pages を有効化）。
 
 ## コントリビューション
-貢献歓迎です。以下を基本ルールとしてください：
 1. Issue を立てて変更内容や目的を共有してください。
 2. 新しい機能や修正はブランチを切ってください（例: `feat/xxx`、`fix/yyy`）。
 3. Pull Request を作成し、内容と動作確認手順を記載してください。
-4. コードスタイルや既存の設計に合わせて実装してください。
 
-必要なら CONTRIBUTING.md を追加します。
+## 注意点: クリーンアップ提案
+- `obj/` や `bin/`、個人環境を示す絶対パスが含まれるファイルはコミット対象から外すため `.gitignore` を整備することをおすすめします。
+- 機密情報やローカルのフルパスが含まれていないか確認してください。
 
 ## ライセンス
-- ライセンスファイル（LICENSE）をリポジトリに追加してください。特に指定がなければ MIT などを推奨しますが、組織や用途に合わせて選んでください。
+- LICENSE ファイルを追加してください（例: MIT）。
 
 ## 連絡先
-- リポジトリオーナー: @minecraft0036  
-- Issue または PR を通して連絡ください。
+- リポジトリオーナー: @minecraft0036
