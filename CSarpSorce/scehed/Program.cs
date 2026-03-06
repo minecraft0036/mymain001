@@ -1,9 +1,27 @@
-﻿namespace scehed;
+﻿using System.Net.Http.Headers;
 
-class Program
+namespace scehed
 {
-    static void Main(string[] args)
+
+    class Program
     {
-        Console.WriteLine("Hello, World!");
+        static void Main(string[] args)
+        {
+            var s = Directory.EnumerateFiles(@"c:\");
+            foreach (var fs in s.Where((s) => s.EndsWith(".txt")))
+            {
+                Console.WriteLine(fs);
+            }
+           
+        }
+
     }
+    class gen<type>
+    {
+        gen(type type)
+        {
+            var d=typeof(type);
+        }
+    }
+  
 }
