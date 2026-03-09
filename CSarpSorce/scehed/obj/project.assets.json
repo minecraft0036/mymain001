@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {
+    "net10.0-windows7.0": {
       "Microsoft.DotNet.ILCompiler/10.0.3": {
         "type": "package",
         "build": {
@@ -97,7 +97,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0": [
+    "net10.0-windows7.0": [
       "Microsoft.DotNet.ILCompiler >= 10.0.3",
       "Microsoft.NET.ILLink.Tasks >= 10.0.3"
     ]
@@ -124,15 +124,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net10.0"
+        "net10.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0": {
-          "targetAlias": "net10.0",
+        "net10.0-windows7.0": {
+          "targetAlias": "net10.0-windows",
           "projectReferences": {}
         }
       },
@@ -149,8 +149,8 @@
       "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
-      "net10.0": {
-        "targetAlias": "net10.0",
+      "net10.0-windows7.0": {
+        "targetAlias": "net10.0-windows",
         "dependencies": {
           "Microsoft.DotNet.ILCompiler": {
             "suppressParent": "All",
