@@ -2,11 +2,17 @@
 {
     internal class Program
     {
+        static void Setreg()
+        {
+
+        }
         static void Main(string[] args)
         {
             
             WriteTitle("Extractor",ConsoleColor.DarkGreen,ConsoleColor.DarkRed);Console.Title = "extractor";Console.CursorVisible = false;
-            AnimateEriteLine("minecraft", ConsoleColor.Green, 80);
+            AnimateEriteLine("minecraft", ConsoleColor.Blue, 80);
+            Console.Title = "Extractor";
+
         }
         static void WriteTitle(string name,ConsoleColor color,ConsoleColor textcolor)
         {
@@ -27,7 +33,6 @@
                 Console.Write(item);
                 Thread.Sleep(duration);
             }
-            Console.Write("\n");
             Console.ForegroundColor = textold;
         }
     }
