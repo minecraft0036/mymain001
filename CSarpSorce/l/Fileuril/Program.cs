@@ -13,24 +13,8 @@ namespace Fileuril
         static void Main(string[] args)
         {
 
-            Thread.GetDomain().SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal);
-            var pri = (WindowsPrincipal)Thread.CurrentPrincipal;
-
-            //管理者権限以外での起動なら, 別プロセスで本アプリを起動する
-            if (!pri.IsInRole(WindowsBuiltInRole.Administrator))
-            {
-                var proc = new ProcessStartInfo()
-                {
-                    FileName=Environment.ProcessPath,
-                    Verb = "RunAs"
-                };
-                Process.Start(proc);
-                return;
-
-
-
-
-            }
+        
+            
             Console.WriteLine("Hello!");
             Console.ReadLine();
         }
@@ -44,7 +28,7 @@ namespace Fileuril
                 Console.ForegroundColor = textold;
                 Console.BackgroundColor = oldcolor;
             }
-            static void AnimateEriteLine(string text, ConsoleColor color, int duration)
+            static void AnimateWriteLine(string text, ConsoleColor color, int duration)
             {
                 var textold = Console.ForegroundColor;
                 Console.ForegroundColor = color;
