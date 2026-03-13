@@ -1,7 +1,8 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
 using System.Security.Principal;
-
+using Fileuril.Properties;
+using Microsoft.Win32;
 namespace Fileuril
 {
     internal class Program
@@ -12,9 +13,7 @@ namespace Fileuril
         }
         static void Main(string[] args)
         {
-
-        
-            
+            Console.WriteLine(Registry.LocalMachine.GetValue(@"SOFTWARE\Classes\AllFilesystemObjects\shell\FileInfo") == null ? "nullptr" : "");
             Console.WriteLine("Hello!");
             Console.ReadLine();
         }
